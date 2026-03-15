@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script
-src="https://cdn.jsdelivr.net/npm/aframe@1.4.1/dist/aframe-master.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aframe@1.4.1/dist/aframe-master.min.js"></script>
 </head>
 <body>
-<a-scene>
-<a-box position="0 1 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-<a-sphere position="2 1 -4" radius="1" color="#EF2D5E"></a-sphere>
-<a-cylinder position="-2 1 -4" radius="0.5" height="1.5"
-color="#FFC65D"></a-cylinder>
-<a-plane rotation="-90 0 0" width="10" height="10"
-color="#7BC8A4"></a-plane>
-<a-sky color="#ECECEC"></a-sky>
-</a-scene>
+
+  <!-- Escena 3D -->
+  <a-scene>
+    <a-box position="0 1 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="2 1 -4" radius="1" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="-2 1 -4" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+  </a-scene>
+
+  <!-- Botón flotante para navegar (z-index es la clave) -->
+  <div style="position: absolute; top: 20px; left: 20px; z-index: 999;">
+    <a href="industrial.html" style="
+      background-color: white; 
+      padding: 10px 20px; 
+      text-decoration: none; 
+      color: blue; 
+      font-family: sans-serif; 
+      border-radius: 5px;
+      font-weight: bold;
+      border: 2px solid blue;">
+      Ir al Modelo Industrial 3D
+    </a>
+  </div>
+
 </body>
 </html>
