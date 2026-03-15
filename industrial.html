@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Modelo Industrial - XR Lab</title>
+    <!-- Cargamos la librería de A-Frame -->
+    <script src="https://aframe.io"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- 1. PISO (a-plane) -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+
+      <!-- 2. ESTRUCTURA BASE (a-box) -->
+      <a-box position="0 0.5 -3" width="4" height="1" depth="2" color="#444"></a-box>
+      
+      <!-- 3. TANQUE INDUSTRIAL (a-cylinder) -->
+      <a-cylinder position="1 2 -3" radius="0.5" height="2" color="#FFC65D"></a-cylinder>
+      
+      <!-- 4. SENSOR/INDICADOR (a-sphere) -->
+      <!-- Una esfera roja que simula una luz de alerta -->
+      <a-sphere position="1 3.2 -3" radius="0.15" color="red"></a-sphere>
+
+      <!-- 5. PANEL DE CONTROL (a-box + a-sphere) -->
+      <a-box position="-1 1.2 -2.5" width="0.8" height="0.5" depth="0.1" color="#222">
+        <!-- Botón del panel -->
+        <a-sphere position="0 0 0.1" radius="0.05" color="green"></a-sphere>
+      </a-box>
+
+      <!-- CIELO -->
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
